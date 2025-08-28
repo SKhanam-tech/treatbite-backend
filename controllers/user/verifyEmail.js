@@ -20,7 +20,7 @@ const verifyEmailController = async (req,res,next) =>{
             userModel.findByIdAndDelete(user._id)
             throw createHttpError(401, "OTP Expired. Do Registration Again")
         }
-        user.isVerifeid = true;
+        user.isVerified = true;
         user.verifyOtp = "";
         user.verifyOtpExpireAt = 0;
         await user.save();

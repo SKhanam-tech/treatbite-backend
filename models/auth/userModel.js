@@ -21,7 +21,7 @@ const userSchema= new mongoose.Schema(
             enum: ["User","Partner","SuperAdmin"],
             default:"User"
         },
-        isVerifeid:{
+        isVerified:{
             type: Boolean,
             default: false
         },

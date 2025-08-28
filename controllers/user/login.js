@@ -27,7 +27,7 @@ const loginController = async (req,res,next)=>{
             throw createHttpError(403,"Invallid Email or Password")
         }
 
-        if(!userData.isVerifeid){
+        if(!userData.isVerified){
             throw createHttpError(403,"Complete Your Registration First")
         }
         //create token
