@@ -28,7 +28,7 @@ const partnerSchema= new mongoose.Schema(
             type: Boolean,
             default:false
         },
-        isVerifeid:{
+        isVerified:{
             type: Boolean,
             default: false
         },
